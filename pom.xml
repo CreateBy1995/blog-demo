@@ -54,6 +54,8 @@
 	<!-- 子模块 -->
 	<modules>
 		<module>eureka</module>
+		<module>login-server</module>
+		<module>login-server-copy</module>
 	</modules>
 
 	<build>
