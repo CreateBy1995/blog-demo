@@ -20,6 +20,11 @@ public class DruidConfiguration {
      */
     @Autowired
     private Environment environment ;
+
+    /**
+     * 配置Druid数据源
+     * @return
+     */
     @Bean
     @Primary
     public DataSource dataSource(){
