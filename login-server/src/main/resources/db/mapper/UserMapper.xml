@@ -5,4 +5,7 @@
     <select id="selectAll" resultType="HashMap">
         select * from test where id = 1;
     </select>
+    <insert id="insertOne" parameterType="HashMap">
+        INSERT into test (id,name) values(#{id},#{name})
+    </insert>
 </mapper>

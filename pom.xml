@@ -51,6 +51,15 @@
 
 	</dependencyManagement>
 
+	<!-- 引入公共API -->
+	<dependencies>
+		<dependency>
+			<groupId>com.sunshine.blog</groupId>
+			<artifactId>common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
 	<!-- 子模块 -->
 	<modules>
 		<module>eureka</module>
