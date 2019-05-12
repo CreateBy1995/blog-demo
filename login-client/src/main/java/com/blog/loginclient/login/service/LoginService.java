@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @FeignClient(name = "LOGIN-SERVER")
 public interface LoginService {
-    @RequestMapping("login")
-    String login();
+    @RequestMapping("login22")
+    String login1();
 }
