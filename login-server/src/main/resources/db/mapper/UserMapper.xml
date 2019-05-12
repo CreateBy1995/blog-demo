@@ -6,6 +6,6 @@
         select * from test where id = 1;
     </select>
     <insert id="insertOne" parameterType="HashMap">
-        INSERT into test (id,name) values(#{id},#{name})
+        INSERT into test (name) values(#{name})
     </insert>
 </mapper>
