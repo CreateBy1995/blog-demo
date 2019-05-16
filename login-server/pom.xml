@@ -34,18 +34,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- 引入ActiveMQ -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-activemq</artifactId>
-		</dependency>
-
-		<!-- 引入ActiveMQ连接池  SpringBoot 2.0版本以上使用的是这个 如果引入activemq-pool 会报错-->
-		<dependency>
-			<groupId>org.messaginghub</groupId>
-			<artifactId>pooled-jms</artifactId>
-		</dependency>
-
 		<!-- druid连接池 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>

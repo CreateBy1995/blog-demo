@@ -14,9 +14,6 @@ import java.util.Map;
 @RestController
 public class LoginController {
     @Autowired
-    @Qualifier("jmsMessagingTemplate")
-    private JmsMessagingTemplate jmsMessagingTemplate ;
-    @Autowired
     private UserService userService ;
     @RequestMapping(value = "login" , method = RequestMethod.GET)
     public String login(){
@@ -31,9 +28,5 @@ public class LoginController {
         HashMap hashMap = new HashMap() ;
         hashMap.put("name","test") ;
         userService.insertOne(hashMap) ;
-    }
-    @RequestMapping(value = "send" , method = RequestMethod.GET)
-    public void send(){
-        jmsMessagingTemplate.convertAndSend("test","sssss");
     }
 }
