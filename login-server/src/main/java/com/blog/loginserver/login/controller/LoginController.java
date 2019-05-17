@@ -2,8 +2,6 @@ package com.blog.loginserver.login.controller;
 
 import com.blog.loginserver.login.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,8 +13,11 @@ import java.util.Map;
 public class LoginController {
     @Autowired
     private UserService userService ;
+    private static int requestCount = 0 ;
     @RequestMapping(value = "login" , method = RequestMethod.GET)
-    public String login(){
+    public String login() throws InterruptedException {
+        System.out.println("请求次数为:------- "+requestCount++);
+        Thread.sleep(3000);
         return "login1" ;
     }
     @RequestMapping(value = "user" , method = RequestMethod.GET)

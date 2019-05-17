@@ -11,6 +11,6 @@ public class LoginController {
     private LoginService loginService ;
     @RequestMapping("login")
     public String login(){
-        return loginService.login1() ;
+        return loginService.login() ;
     }
 }
